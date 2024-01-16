@@ -20,16 +20,16 @@ const review = {
     validation: Rule => Rule.required(),
   }),
   defineField({
-    name: "",
-    title: "",
-    type: "",
+    name: "text",
+    title: "Review Text",
+    type: "text",
     validation: Rule => Rule.required(),
   }),
   defineField({
-    name: "",
-    title: "",
-    type: "",
-    validation: Rule => Rule.required(),
+    name: "userRating",
+    title: "User Rating",
+    type: "number",
+    validation: Rule => Rule.required().min(1).max(5).error("RATING MUST BE BETWEEN 1 AND 5"),
   }),
 
 ],
