@@ -28,6 +28,9 @@ export async function POST(req: Request, res: Response){
             const session = event.data.object;
             // console.log("session =>", session);
             const {
+
+                
+                    // @ts-ignore
                 metadata: {
                     adults,
                     checkinDate,
