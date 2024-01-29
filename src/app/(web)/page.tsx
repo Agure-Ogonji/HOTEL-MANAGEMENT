@@ -1,7 +1,9 @@
 import Image from 'next/image'
 
 const HOME = () => {
-  return <>HOME</>;
+  return <>
+    {/**HERO SECTION */}
+  </>;
 };
 
 export default HOME;
