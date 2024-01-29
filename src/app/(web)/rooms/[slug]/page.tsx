@@ -30,8 +30,6 @@ const RoomDetails = (props: {params: {slug: string}}) => {
 
     const {data: room, error, isLoading} = useSWR("/api/room", fetchRoom);
 
-    if(error) throw new Error("CANNOT FETCH DATA");
-    if(typeof room === "undefined" && !isLoading) throw new Error("CANNOT FETCH DATA");
     if(!room) return (
         <LoadingSpinner/>
     );
