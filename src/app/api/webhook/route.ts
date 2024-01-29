@@ -1,7 +1,6 @@
 import { createBooking, updateHotelRoom } from "@/libs(LIBRARY)/apis";
 import { NextResponse } from "next/server";
 import Stripe from "stripe";
-import 'reflect-metadata';
 
 const checkout_session_completed = "checkout.session.completed";
 
